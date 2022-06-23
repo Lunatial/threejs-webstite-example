@@ -84,12 +84,12 @@ Array(200).fill().forEach(addStar);
 // Background
 // Háttér adása
 // itt callback functiont lehetne adni, hogy mikor töltődött be és ez alapján akár loadingot kirakni
-const spaceTexture = myTextureLoader.load('/space.jpg');
+const spaceTexture = myTextureLoader.load('./space.jpg');
 scene.background = spaceTexture;
 
 // Avatar
 
-const mirkoTexture = myTextureLoader.load('/mirko.png');
+const mirkoTexture = myTextureLoader.load('./mirko.png');
 
 const mirko = new THREE.Mesh(
     new THREE.BoxGeometry(3, 3, 3),
@@ -100,8 +100,8 @@ scene.add(mirko);
 
 // Moon
 
-const moonTexture = myTextureLoader.load('/moon.jpg');
-const normalTexture = myTextureLoader.load('/normal.jpg');
+const moonTexture = myTextureLoader.load('./moon.jpg');
+const normalTexture = myTextureLoader.load('./normal.jpg');
 
 const moon = new THREE.Mesh(
     new THREE.SphereGeometry(3, 32, 32),
